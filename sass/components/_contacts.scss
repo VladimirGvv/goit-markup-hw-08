@@ -69,6 +69,10 @@
         align-items: center;
     
         }
+                 @media screen and (min-width: 1200px) {
+                    font-size: 14px;
+                    line-height: 1.14;
+                 }
 }
 .contacts__link--mail {
     display: block;
@@ -94,6 +98,10 @@
         content: "";
 
     }
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.14;
+        }
 }
 
 .contacts__link:hover,
