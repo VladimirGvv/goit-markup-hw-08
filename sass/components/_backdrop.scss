@@ -1,6 +1,6 @@
 .backdrop {
     position: fixed;
-    z-index: 2;
+    z-index: 99;
     top: 0;
     left: 0;
     width: 100%;
@@ -9,6 +9,8 @@
 
     visibility: visible;
     transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    overflow-y: scroll ;
 }
 
 .backdrop__is-hidden {
@@ -33,12 +35,16 @@
     top: 50%;
     left: 50%;
 
-    min-width: 528px;
-    min-height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     background-color: $primary-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    // @media screen and (min-width: 768px) {
+        
+    // }
 }
 
 .modal__btn-close {
@@ -75,7 +81,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    width: 448px;
+    width: 370px;
     height: 342px;
 }
 
@@ -96,7 +102,7 @@
 .form__input {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    width: 448px;
+    width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -124,7 +130,7 @@
 .form__feetback {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    width: 448px;
+    width: 370px;
     height: 120px;
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -148,7 +154,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     color: $desc-text-color;
 }
 
@@ -163,7 +170,8 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    margin-right: 8.38px;
+    margin-right: 8px;
+    margin-left: 0;
     border: 2px solid $primary-text-color;
     border-radius: 2px;
 }
@@ -175,8 +183,8 @@
 }
 
 .check-box__link {
-    margin-left: 5px;
-    line-height: 1.71;
+    margin-left: 3px;
+    line-height: 1.16;
     color: $accent-color;
 }
 

@@ -1,5 +1,9 @@
 .section__direction {
     padding-top: 0;
+
+    @media screen and (max-width:1199px){
+        display: none;
+    }
 }
 
 .direction__title {
@@ -14,16 +18,17 @@
 .direction__list {
     display: flex;
     justify-content: space-between;
+    margin: -30px;
 }
 
 .direction__item {
     z-index: 1;
     position: relative;
+
+    width: calc((100%-30px*3)/3);
+    margin: 15px;
 }
 
-.direction__item+.direction__item {
-    margin-left: 30px;
-}
 
 .direction__text {
     width: 100%;
