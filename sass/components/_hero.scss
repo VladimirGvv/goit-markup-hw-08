@@ -32,14 +32,13 @@
                 }
  }
 @media (min-width: 768px) {
-     .hero {background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-         url(../images/hero_dekstop.jpg);}
+     .hero {background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_desktop.jpg);}
 
      @media (min-device-pixel-ratio: 2),
      (min-resolution: 192dpi),
      (min-resolution: 2dppx) {
          .hero {
-             background-image: url(../images/hero_destop2x.jpg);
+             background-image: url(../images/hero_desktop2x.jpg);
          }
      }
 
