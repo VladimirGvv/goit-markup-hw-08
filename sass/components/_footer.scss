@@ -7,15 +7,18 @@
 .footer__container {
     display: block;
 
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 1199px) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: baseline;
     
         }
-
-
+      @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+}
+    
 }
 
 .footer__contacts {
@@ -25,14 +28,18 @@
 
 .footer__logo {
     margin: 0;
-    text-align: center;
     color: $primary-white-color;
     font-family: $fontlogo;
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .address {
     font-style: normal;
-    text-align: center;
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
 }
 
 .address__list {
@@ -59,13 +66,17 @@
 
 .footer__socials {
     display: block;
-    text-align: center;
     margin-top: 60px;
-
+    
     @media screen and (min-width: 768px) {
             margin-top: 0px;
         }
-
+ @media screen and (max-width: 1199px) {
+     text-align: center;
+ }
+ @media screen and (min-width: 1200px) {
+     margin-left: auto;
+ }
 }
 
 .socials__title {
@@ -85,10 +96,14 @@
 /* subscribe */
 .footer__subscribe {
     display: block;
-    text-align: center;
-    margin-top: 60px;
 
-   
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+            margin-top: 60px;
+        }
+           @media screen and (min-width: 1200px) {
+               margin-left: auto;
+           }
 }
 
 .subscribe__title {
@@ -102,7 +117,13 @@
 
 .subscribe__form {
     display: block;
-    text-align: center;
+   
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                }
 }
 
 .subscribe__input {
@@ -119,6 +140,9 @@
     @media screen and (min-width: 768px) {
             width: 450px;
         }
+                @media screen and (min-width: 1200px) {
+                    width: 358px;
+                }
 }
 
 .subscribe__input:placeholder {
@@ -136,7 +160,6 @@
     align-items: center;
     width: 200px;
     height: 50px;
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -148,6 +171,10 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     letter-spacing: 0.06em;
+    
+    @media screen and (max-width: 1199px) {
+            margin-top: 20px;
+        }
 }
 
 .subscribe__logo {
